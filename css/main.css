@@ -2278,7 +2278,7 @@ html.no-csstransitions .home-content__main {
   width: 48px;
   line-height: 48px;
   border-radius: 50%;
-  box-shadow: 0 0 0 18px #ffffff;
+  
   position: absolute;
   left: 20px;
   top: 0;
@@ -3465,7 +3465,7 @@ section {
 .bot-left:before {
   top: -3px;
   width: 3px;
-  background-image: -webkit-gradient(linear, 0 100%, 0 0, from(#fc4f02), to(transparent));
+  background-image: -webkit-gradient(linear, 0 100%, 0 0, from(#000), to(transparent));
   background-image: -webkit-linear-gradient(transparent, #fc4f02);
   background-image: -moz-linear-gradient(transparent, #fc4f02);
   background-image: -o-linear-gradient(transparent, #fc4f02);
@@ -3473,10 +3473,25 @@ section {
 .bot-left:after {
   right: -3px;
   height: 3px;
-  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#fc4f02), to(transparent));
-  background-image: -webkit-linear-gradient(left, #fc4f02, transparent);
-  background-image: -moz-linear-gradient(left, #fc4f02, transparent);
-  background-image: -o-linear-gradient(left, #fc4f02, transparent);
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#000), to(transparent));
+  background-image: -webkit-linear-gradient(left, #000, transparent);
+  background-image: -moz-linear-gradient(left, #000, transparent);
+  background-image: -o-linear-gradient(left, #000, transparent);
+}
+
+.bottom-to-top {
+    border-width: 3px;
+    border-style: solid;
+    -webkit-border-image: 
+      -webkit-gradient(linear, 0 100%, 0 0, from(black), to(rgba(0, 0, 0, 0))) 1 100%;
+    -webkit-border-image: 
+      -webkit-linear-gradient(bottom, black, #fc4f02) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(bottom, #fc4f02, #fc4f02) 1 100%;  
+    -o-border-image:
+      -o-linear-gradient(bottom, #fc4f02, rgba(0, 0, 0, 0)) 1 100%;
+    border-image:
+      linear-gradient(to top, #fc4f02, rgba(0, 0, 0, 0)) 1 100%;
 }
 
 
@@ -3492,7 +3507,7 @@ hr.style-two {
 hr.style-five {
     border: 0;
     height: 0; /* Firefox... */
-    box-shadow: 0 0 10px 1px orange;
+    
 }
 hr.style-five:after {  /* Not really supposed to work, but does */
     content: "\00a0";  /* Prevent margin collapse */
