@@ -1013,10 +1013,10 @@ input::-moz-focus-inner {
  * markup:
  *
  * <aside class="pull-quote">
- *		<blockquote>
- *			<p></p>
- *		</blockquote>
- *	</aside>
+ *    <blockquote>
+ *      <p></p>
+ *    </blockquote>
+ *  </aside>
  *
  * --------------------------------------------------------------------- */
 .pull-quote {
@@ -1054,8 +1054,8 @@ input::-moz-focus-inner {
  * markup:
  *
  * <ul class="stats-tabs">
- *		<li><a href="#">[value]<em>[name]</em></a></li>
- *	</ul>
+ *    <li><a href="#">[value]<em>[name]</em></a></li>
+ *  </ul>
  *
  * Extend this object into your markup.
  *
@@ -1471,7 +1471,7 @@ input::-moz-focus-inner {
 }
 .header-nav__social li a:hover,
 .header-nav__social li a:focus {
-  color: white;
+  color: #fc4f02;
 }
 .header-nav__social li:last-child {
   margin: 0;
@@ -3064,7 +3064,7 @@ html.no-csstransitions .home-content__main {
 }
 .contact-social li a:hover,
 .contact-social li a:focus {
-  color: #ffffff;
+  color: #fc4f02;
 }
 .contact-social li:last-child {
   margin: 0;
