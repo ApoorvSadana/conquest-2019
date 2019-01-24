@@ -2889,8 +2889,7 @@ html.no-csstransitions .home-content__main {
 .s-stats {
   padding-top: 4.2rem;
   padding-bottom: 4.2rem;
-  background-color: #050505;
-  background-image: url(../images/stats-bg.jpg);
+  background-color: #000000;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -2900,7 +2899,7 @@ html.no-csstransitions .home-content__main {
 .s-stats::before {
   display: block;
   content: "";
-  background-color: #050505;
+  background-color: #000000;
   position: absolute;
   top: 0;
   left: 0;
