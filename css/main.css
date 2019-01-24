@@ -1,4 +1,4 @@
-f/* =================================================================== 
+/* =================================================================== 
  *
  *  Transcend v1.0 Main Stylesheet
  *  03-19-2018
@@ -70,7 +70,7 @@ html, body {
 }
 
 body {
-  background: black;
+  background: #111111;
   font-family: "metropolis-regular", sans-serif;
   font-size: 1.7rem;
   font-style: normal;
@@ -251,7 +251,7 @@ blockquote p {
   padding: 0;
   font-size: 2.1rem;
   line-height: 1.857;
-  color: black;
+  color: #111111;
 }
 
 blockquote cite {
@@ -851,8 +851,8 @@ button.btn--primary:focus,
 input[type="submit"].btn--primary:focus,
 input[type="reset"].btn--primary:focus,
 input[type="button"].btn--primary:focus {
-  background: #b51271;
-  border-color: #b51271;
+  background: #000000;
+  border-color: #fc4f02;
 }
 
 /* button modifiers
@@ -1471,7 +1471,7 @@ input::-moz-focus-inner {
 }
 .header-nav__social li a:hover,
 .header-nav__social li a:focus {
-  color: #fc4f02;
+  color: white;
 }
 .header-nav__social li:last-child {
   margin: 0;
@@ -1641,7 +1641,7 @@ input::-moz-focus-inner {
   }
   .header-logo img {
     width: 180px;
-    height: 34px;
+    height: 60px;
   }
 
   .header-menu-toggle {
@@ -1773,8 +1773,8 @@ input::-moz-focus-inner {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   position: absolute;
-  top: 50%;
-  right: 0;
+  top: 45%;
+  right: -8%;
 }
 .home-sidelinks li {
   display: block;
@@ -1789,7 +1789,7 @@ input::-moz-focus-inner {
 .home-sidelinks li:last-child {
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
-.home-sidelinks li::before {
+/*.home-sidelinks li::before {
   content: "";
   display: block;
   height: 6px;
@@ -1800,7 +1800,7 @@ input::-moz-focus-inner {
   top: 3rem;
   left: 2rem;
 }
-.home-sidelinks a {
+*/.home-sidelinks a {
   display: block;
   padding: 2.1rem 15rem 2.1rem 4rem;
   color: #ffffff;
@@ -2278,7 +2278,7 @@ html.no-csstransitions .home-content__main {
   width: 48px;
   line-height: 48px;
   border-radius: 50%;
-  
+  box-shadow: 0 0 0 18px #ffffff;
   position: absolute;
   left: 20px;
   top: 0;
@@ -2472,9 +2472,7 @@ html.no-csstransitions .home-content__main {
   padding: 18rem 0 24rem;
   position: relative;
 }
-section {
-    min-height: 100vh; /* minus the height of the footer */
-}
+
 
 /* ------------------------------------------------------------------- 
  * ## bricks/masonry
@@ -2891,8 +2889,8 @@ section {
 .s-stats {
   padding-top: 4.2rem;
   padding-bottom: 4.2rem;
-  background-color: black;
-  color : #fc4f02;
+  background-color: #050505;
+  background-image: url(../images/stats-bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -2902,7 +2900,7 @@ section {
 .s-stats::before {
   display: block;
   content: "";
-  background-color: black;
+  background-color: #050505;
   position: absolute;
   top: 0;
   left: 0;
@@ -2993,7 +2991,7 @@ section {
 .s-contact {
   padding-top: 21rem;
   padding-bottom: 10.2rem;
-  background-color: black;
+  background-color: #111111;
   color: rgba(255, 255, 255, 0.3);
   position: relative;
 }
@@ -3067,7 +3065,7 @@ section {
 }
 .contact-social li a:hover,
 .contact-social li a:focus {
-  color: #fc4f02;
+  color: #ffffff;
 }
 .contact-social li:last-child {
   margin: 0;
@@ -3425,75 +3423,315 @@ section {
   }
 }
 
+/*# sourceMappingURL=main.css.map */
 
 
-.MainContainer {
-  perspective: 1px;
-  transform-style: preserve-3d;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
 
-.ParallaxContainer {
-  display: flex;
-  flex: 1 0 auto;
-  position: relative;
-  height: 100vh;
-  transform: translateZ(-1px) scale(2);
-  z-index: -1;
-}
+/* OUR CSS */
 
-.ContentContainer {
-  display: block;
-  position: relative;
-  background-color: white;
-  z-index: 1;
+hr.style-two
+{
+  width: 40%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0,0,0,0), #fc4f02, rgba(0,0,0,0))
 }
 
 
-.bot-left {
-  position: relative;
+h2{
+  text-align:center;
+  padding: 20px;
 }
-.bot-left:before, .bot-left:after {
-  content: "";
+/* Slider */
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+/*.home-button
+{
+  width: 30%; 
   position: absolute;
-  bottom: -3px;
-  left: -3px;
-  
-}
-.bot-left:before {
-  top: -3px;
-  width: 3px;
-  background-image: -webkit-gradient(linear, 0 100%, 0 0, from(#000), to(transparent));
-  background-image: -webkit-linear-gradient(transparent, #fc4f02);
-  background-image: -moz-linear-gradient(transparent, #fc4f02);
-  background-image: -o-linear-gradient(transparent, #fc4f02);
-}
-.bot-left:after {
-  right: -3px;
-  height: 3px;
-  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#000), to(transparent));
-  background-image: -webkit-linear-gradient(left, #000, transparent);
-  background-image: -moz-linear-gradient(left, #000, transparent);
-  background-image: -o-linear-gradient(left, #000, transparent);
+  right : 0;
+  top: 55%
 }
 
-.bottom-to-top {
-    border-width: 3px;
-    border-style: solid;
-    -webkit-border-image: 
-      -webkit-gradient(linear, 0 100%, 0 0, from(black), to(rgba(0, 0, 0, 0))) 1 100%;
-    -webkit-border-image: 
-      -webkit-linear-gradient(bottom, black, #fc4f02) 1 100%;
-    -moz-border-image:
-      -moz-linear-gradient(bottom, #fc4f02, #fc4f02) 1 100%;  
-    -o-border-image:
-      -o-linear-gradient(bottom, #fc4f02, rgba(0, 0, 0, 0)) 1 100%;
-    border-image:
-      linear-gradient(to top, #fc4f02, rgba(0, 0, 0, 0)) 1 100%;
+.home-button-phone
+{
+  width: 85vw; 
+  position: absolute;
+  bottom: -40%
+}*/
+
+@media (max-width: 600px)
+{
+  .home-button
+  {
+    width: 85vw; 
+    position: absolute;
+    bottom: -40%;
+  }
+  .ctr 
+  {
+    display: block;
+    position: relative;
+    width: 80vw;
+  }
+  .indicator:after 
+  {
+    content: attr(data-content);
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #777;
+    -webkit-transition: inherit;
+    transition: inherit;
+    font-size: 24px;
+    z-index: 999;
+    text-align: center;
+    font-weight: 300;
+  }
+
 }
 
+@media (min-width: 601px)
+{
+  .home-button
+  {
+    width: 30%; 
+    position: absolute;
+    bottom: -30%;
+    left: 30%;
+  }
+  .ctr 
+  {
+    display: block;
+    position: relative;
+    width: 450px;
+  }
+  .indicator:after 
+  {
+    content: attr(data-content);
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #777;
+    -webkit-transition: inherit;
+    transition: inherit;
+    font-size: 24px;
+    z-index: 999;
+    text-align: center;
+    font-weight: 300;
+  }
+}
+
+
+/* FORM */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300);
+
+
+
+input:focus {
+  outline: none;
+}
+
+
+
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255,255,255,.15);
+  width: 0%;
+  z-index: 99;
+  pointer-events: none;
+  -webkit-transition: 3s all ease;
+  transition: 3s all ease;
+}
+
+.loader.full {
+  width: 100%;
+}
+
+.loader.done {
+  background: #fc4f02;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
+  height: 0;
+}
+
+input {
+  line-height: 80px;
+  width: 100%;
+  font-size: 24px;
+  padding: 0 20px;
+  border: none;
+  cursor: pointer;
+  color: blue;
+  position: relative;
+  z-index: 10;
+  background: transparent;
+  color: transparent;
+  font-weight: 300;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
+  font-family: 'Roboto', sans-serif;
+}
+
+input.full {
+  pointer-events: none !important;
+  width: 0%;
+}
+
+.indicator {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 5px;
+  background: #fc4f02;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
+  z-index: 9;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+input:focus {
+  color: white;
+}
+
+input:focus + .indicator {
+  height: 100%
+}
+
+input.full:focus + .indicator {
+  height: 5px;
+  color: #fc4f02;
+}
+
+input:focus + .indicator:after {
+  color: #fc4f02;
+}
 
 hr.style-two {
     width: 40%;
