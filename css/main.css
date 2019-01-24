@@ -3186,7 +3186,7 @@ html.no-csstransitions .home-content__main {
 }
 .cl-go-top a:hover,
 .cl-go-top a:focus {
-  background-color: #ffffff;
+  background-color: #fc4f02;
   color: #000000;
 }
 .cl-go-top::before {
