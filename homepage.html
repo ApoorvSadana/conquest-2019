@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/slider.css">
 
+
     <link rel="stylesheet" type="text/css" href="our.css">
     <link rel="stylesheet" href="css/imagehover.min.css">
 
@@ -121,7 +122,7 @@
 
     <!-- home
     ================================================== -->
-    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/orange-mountain.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=top>
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/orange-mountain-zoomv2.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=top>
 
 
         <div class="shadow-overlay"></div>
@@ -129,19 +130,28 @@
 
         <div class="home-content">
  
-            <div class="row home-content__main">
+            <div class="row home-content__main" style="margin-top: -10%">
 
-                <h1><img src="./images/title.png" style="width: 80%"></h1>
+                <h1><img src="./images/title.png" style="width: 80%;"></h1>
 
                 <p>
                 We create stunning digital experiences <br>
                 that will help your business stand out.
                 </p>
-
+                <div class="home-button">
+                    <!-- <a class="btn btn--primary full-width" href="#0" style="margin-top: -10%; margin-bottom: 0%">Primary Button</a>\
+                    <a class="btn btn--stroke full-width" href="#0" style="color: white; border-color: white; margin-top: -20%">Stroke Button</a> -->
+                    <form class="ctr" action="#" method="#">
+                        <div class="loader"></div>
+                        <input type="text">
+                        <div class="indicator" data-content="Want to sneak peak?"></div>
+                    </form>
+                    <script  src="subscribe-js/index.js"></script>
+                </div>
             </div> <!-- end home-content__main -->
-
         </div> <!-- end home-content -->
- 
+
+
         <ul class="home-sidelinks">
 
             <li><a  href="https://www.facebook.com/ConquestBITS/" target="_blank"><div class="fab fa-facebook" style="margin: -50%;"></div></a></li>
@@ -180,20 +190,49 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="slider.js"></script>
 
-<div class="container" style="margin-top: -20%;">
+<div class="container" style="margin-top: -20%;" data-aos = "fade-up">
   <h2>Our  Partners</h2>
    <section class="customer-logos slider">
-      <div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
-      <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
-      <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
-      <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
-      <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
-      <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
-      <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
-      <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg"></div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg">
+      	<hr class="style-two" style="width: 100%; position: relative; height: 2px;">
+      </div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg">
+        <hr class="style-two" style="width: 100%; position: relative; height: 2px;">
+      </div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg">
+        <hr class="style-two" style="width: 100%; position: relative; height: 2px;">
+      </div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg">
+        <hr class="style-two" style="width: 100%; position: relative; height: 2px;">
+      </div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg">
+        <hr class="style-two" style="width: 100%; position: relative; height: 2px;">
+      </div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg">
+        <hr class="style-two" style="width: 100%; position: relative; height: 2px;">
+      </div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg">
+        <hr class="style-two" style="width: 100%; position: relative; height: 2px;">
+      </div>
+      <div class="slide"><img src="https://image.freepik.com/free-vector/retro-label-on-rustic-background_82147503374.jpg">
+        <hr class="style-two" style="width: 100%; position: relative; height: 2px;">
+      </div>
    </section>
 </div>
 
+ <!-- popup
+    ================================================== -->
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <div class="popup" style="background-color: #111111; height: 90vh; width: 70vw; position: fixed; left: 50%; top: 50%; transform: translate(-50%,-50%); z-index: 2000; border-style: solid; border-width: 2px;border-color: #fc4f02; color: #fc4f02">
+        <form>
+            <div style="color: white;" class="popup">
+                <h1 style="text-align: center; color: #fc4f02; font-size: 300%">Register for Conquest!</h1>
+                <label for="name" style="color: #fc4f02; font-size: 200%; position: absolute; left: 50%; transform: translate(-50%)">Name</label>
+                <input type="text" id="name" name="name" style="background-color: #111111; width: 80%; position: absolute; left: 50%; transform: translate(-50%); border: 1px; border-color: #fc4f02">
+            </div>
+        </form>
+    </div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
     <section id="contact" class="s-contact" style="margin-bottom: -50% ; background-color: black">
 
@@ -271,9 +310,12 @@
     <!-- preloader
     ================================================== -->
     <div id="preloader">
-        <div id="loader" style="background-image: url(logo-stroke2.png); background-size: cover;">       
+        <div id="loader" style="background-image: url(images/logo-stroke2.png); background-size: cover;">       
         </div>
     </div>
+
+   
+
 
 
 
