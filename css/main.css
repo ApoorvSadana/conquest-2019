@@ -2888,8 +2888,7 @@ html.no-csstransitions .home-content__main {
 .s-stats {
   padding-top: 4.2rem;
   padding-bottom: 4.2rem;
-  background-color: #050505;
-  background-image: url(../images/stats-bg.jpg);
+  background-color: #111111;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -2899,7 +2898,7 @@ html.no-csstransitions .home-content__main {
 .s-stats::before {
   display: block;
   content: "";
-  background-color: #050505;
+  background-color: #111111;
   position: absolute;
   top: 0;
   left: 0;
@@ -3732,11 +3731,12 @@ input:focus + .indicator:after {
   color: #fc4f02;
 }
 
-hr.style-two {
-    width: 40%;
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #fc4f02, rgba(0, 0, 0, 0));
+hr.style-two-black
+{
+  width: 40%;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255,255,255,0), #000000, rgba(255,255,255,0))
 }
 
 /* Cloud */
