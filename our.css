@@ -26,3 +26,15 @@
     webkit-filter: blur(4px);  Chrome, Safari, Opera 
     filter: blur(4px);
 }*/
+
+@media (max-width: 600px)
+{
+  .multbg-top-to-bottom-left
+  {
+    display: none;
+  }
+  .multbg-top-to-bottom
+  {
+    display: none;
+  }
+}
