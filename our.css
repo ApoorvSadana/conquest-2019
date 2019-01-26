@@ -33,4 +33,14 @@ hr.style-two-wide {
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #fc4f02, rgba(0, 0, 0, 0));
+@media (max-width: 600px)
+{
+  .multbg-top-to-bottom-left
+  {
+    display: none;
+  }
+  .multbg-top-to-bottom
+  {
+    display: none;
+  }
 }
