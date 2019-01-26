@@ -45,10 +45,10 @@
  
 
 <body id="top" style="overflow-x: hidden; background-color: black">
-    <div class="popup" style="width: 100vw; height: 100vh; background-color: #000000;
+    <div id="reg-overlay" class="popup" style="width: 100vw; height: 100vh; background-color: #000000;
         opacity: 0.8; position: fixed; top: 0; left: 0; z-index: 1999"></div>
 
- 
+     
     <!-- header
     ================================================== -->
     <header class="s-header">
@@ -87,7 +87,7 @@
                 <ul class="header-nav__social">
 
                     <li>
-                        <a href="https://www.facebook.com/ConquestBITS/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.facebook.com/ConquestBITS/" target="_blank"><i class="fab fa-facebook sidelinkhover"></i></a>
                     </li>
 
                     <li>
@@ -145,7 +145,7 @@
                     <a class="btn btn--stroke full-width" href="#0" style="color: white; border-color: white; margin-top: -20%">Stroke Button</a> -->
                     <form class="ctr" action="#" method="#">
                         <div class="loader"></div>
-                        <input type="text">
+                        <input type="email">
                         <div class="indicator" data-content="Want to sneak peak?"></div>
                     </form>
                     <script  src="subscribe-js/index.js"></script>
@@ -156,11 +156,11 @@
 
         <ul class="home-sidelinks">
 
-            <li><a  href="https://www.facebook.com/ConquestBITS/" target="_blank"><div class="fab fa-facebook" style="margin: -50%;"></div></a></li>
-            <li><a href="https://twitter.com/ConquestBITS" target="_blank"href="#services"><div class="fab fa-twitter" style="margin: -50%;"></div></a></li>
-            <li><a href="https://www.linkedin.com/company/conquest---bits/" target="_blank"><div class="fab fa-linkedin" style="margin: -50%;"></div></a></li>
-            <li><a href="https://medium.com/conquest" target="_blank"><div class="fab fa-medium" style="margin: -50%;"></div></a></li>
-            <li><a href="https://www.youtube.com/channel/UCt4foktbytTA9-9ZgPfGFOA" target="_blank"><div class="fab fa-youtube" style="margin: -50%;"></div></a></li>
+            <li><a  href="https://www.facebook.com/ConquestBITS/" target="_blank"><div class="fab fa-facebook fa-lg" style="margin: -50%;"></div></a></li>
+            <li><a href="https://twitter.com/ConquestBITS" target="_blank"href="#services"><div class="fab fa-twitter fa-lg" style="margin: -50%;"></div></a></li>
+            <li><a href="https://www.linkedin.com/company/conquest---bits/" target="_blank"><div class="fab fa-linkedin fa-lg" style="margin: -50%;"></div></a></li>
+            <li><a href="https://medium.com/conquest fa-lg" target="_blank"><div class="fab fa-medium fa-lg" style="margin: -50%;"></div></a></li>
+            <li><a href="https://www.youtube.com/channel/UCt4foktbytTA9-9ZgPfGFOA" target="_blank"><div class="fab fa-youtube fa-lg" style="margin: -50%;"></div></a></li>
 
 
         </ul> <!-- end home-sidelinks -->
@@ -226,20 +226,21 @@
     ================================================== -->
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
     
-    <div class="popup" style="background-color: #ffffff; min-height: 70vh; width: 50vw; position: fixed; left: 50%; top: 50%; transform: translate(-50%,-50%); z-index: 2000; border-style: solid; border-width: 2px;border-color: #fc4f02; color: #fc4f02; overflow-y: scroll; border-radius: 2%;">
+    <div id="reg-popup" class="popup" style="background-color: #ffffff;; position: fixed; left: 50%; top: 50%; transform: translate(-50%,-50%); z-index: 2000; border-style: solid; border-width: 2px;border-color: #fc4f02; color: #fc4f02; overflow-y: scroll; ">
+        <button style="position: absolute; top: 2%; right:  2%; color: #fc4f02; background-color: #ffffff; border-style: none;" onclick="closeForm()">X</button>
         <form style="font-family: Roboto">
             <div style="color: white;" class="popup">
                 <h1 style="text-align: center; color: black; font-size: 300%">Register for Conquest!</h1>
             <div style="display: flex; flex-wrap: wrap;">
                 <!-- <label for="name" style="color: #fc4f02; font-size: 200%; margin-left: 10%">Name</label> -->
-                <input type="text" id="name" name="name" placeholder="Name" style="background-color: #ffffff; width: 40%; position: relative;  border-style: solid; border-width: 1px; border-color: #222222; color: #fc4f02; margin: auto; margin-top: 3%" required>
+                <input class="reg-input" type="text" id="name" name="name" placeholder="Name" style="background-color: #ffffff; position: relative;  border-style: solid; border-width: 1px; border-color: #222222; color: #fc4f02; margin: auto; margin-top: 3%" required>
                 <!-- <label for="email-id" style="color: #fc4f02; font-size: 200%; margin-left: 10%">Email Address</label> -->
-                <input type="email" id="email-id" name="email-id" placeholder="Email Address" style="background-color: #ffffff; width: 40%; position: relative;  border-style: solid; border-width: 1px; border-color: #222222; color: #fc4f02; margin: auto; margin-top: 3%" required>
+                <input class="reg-input" type="email" id="email-id" name="email-id" placeholder="Email Address" style="background-color: #ffffff;  position: relative;  border-style: solid; border-width: 1px; border-color: #222222; color: #fc4f02; margin: auto; margin-top: 3%" required>
                 <!-- <label for="phone" style="color: #fc4f02; font-size: 200%; margin-left: 10%">Phone Number</label> -->
-                <input type="text" id="phone" name="phone" placeholder="Phone" style="background-color: #ffffff; width: 40%; position: relative;  border-style: solid; border-width: 1px; border-color: #222222; color: #fc4f02; margin: auto; margin-top: 3%">
+                <input class="reg-input" type="text" id="phone" name="phone" placeholder="Phone" style="background-color: #ffffff; position: relative;  border-style: solid; border-width: 1px; border-color: #222222; color: #fc4f02; margin: auto; margin-top: 3%">
                 <!-- <label for="startup-name" style="color: #fc4f02; font-size: 200%; margin-left: 10%">Startup Name</label> -->
-                <input type="text" id="startup-name" name="startup-name" placeholder="Startup Name" style="background-color: #ffffff; width: 40%; position: relative;  border-style: solid; border-width: 1px; border-color: #222222; color: #fc4f02; margin: auto; margin-top: 3%">
-                <input type="submit" name="submit" id="submit" style="left: 50%; transform: translate(-50%); position: fixed; bottom: 5%; width: 80%; background-color: #fc4f02; border-color: #fc4f02">
+                <input class="reg-input" type="text" id="startup-name" name="startup-name" placeholder="Startup Name" style="background-color: #ffffff;  position: relative;  border-style: solid; border-width: 1px; border-color: #222222; color: #fc4f02; margin: auto; margin-top: 3%">
+                <input type="submit" name="submit" id="submit" style="left: 50%; transform: translate(-50%); position: fixed; bottom: 5%; width: 80%; background-color: #fc4f02; border-color: #fc4f02; margin: auto; margin-top: 10%;">
             </div>
             </div>
         </form>
@@ -247,7 +248,8 @@
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
 
-    <section id="contact" class="s-contact" style="margin-bottom: -50% ; background-color: black">
+    <section id="contact" class="s-contact" style="margin-bottom: -50% ; background-color: black" data-aos="fade-up">
+        <div id="for-js-popup" style="width: 100%;"></div>
 
         <div class="row" style="margin-top: -5%">
 
@@ -337,6 +339,44 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="reg-js/jquery.waypoints.min.js"></script>
+
+    <script type="text/javascript">
+        // $(window).scroll(function() {
+        // if($(window).scrollTop() + $(window).height() > $(document).height() - 200) {
+        // openForm();
+        // }
+        // });
+
+
+        // if($('#for-js-popup').is(':visible'))
+        // {
+        //     openForm();
+        // }
+
+        var $temp = $('#for-js-popup')
+
+        $temp.waypoint( function(direction) {
+            if(direction == 'down')
+            {
+                openForm();
+            }
+        }, { offset : '50%'})
+
+
+        function openForm()
+        {
+           document.getElementById("reg-popup").style.display = "block";
+            document.getElementById("reg-overlay").style.display = "block"; 
+        }
+        
+        function closeForm() 
+        {
+            document.getElementById("reg-popup").style.display = "none";
+            document.getElementById("reg-overlay").style.display = "none";
+        }
+    </script>
+    
 
  
 </body>
