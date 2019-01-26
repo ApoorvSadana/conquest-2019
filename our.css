@@ -26,3 +26,11 @@
     webkit-filter: blur(4px);  Chrome, Safari, Opera 
     filter: blur(4px);
 }*/
+
+/* Gradient transparent - color - transparent */
+
+hr.style-two-wide {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #fc4f02, rgba(0, 0, 0, 0));
+}
